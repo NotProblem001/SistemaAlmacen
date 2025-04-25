@@ -8,7 +8,6 @@ public class Inventario {
 
     public Inventario() {
         this.productos = new ArrayList<>();
-        // Productos de ejemplo
         this.productos.add(new Fruta("Manzana", 500, 10, "Tropical"));
         this.productos.add(new Verdura("Zanahoria", 300, 15));
         this.productos.add(new Lacteo("Leche", 1200, 5));
@@ -57,7 +56,7 @@ public class Inventario {
             } else if (indice >= 0 && indice < size()) {
                 System.out.print("Ingrese cantidad: ");
                 int cantidad = scanner.nextInt();
-                scanner.nextLine(); // Consumir el salto de línea
+                scanner.nextLine();
                 
                 Producto producto = getProducto(indice);
                 usuario.agregarAlCarrito(producto, cantidad);

@@ -12,7 +12,7 @@ public class SistemaAlmacen {
         while (!salir) {
             mostrarMenuPrincipal();
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            scanner.nextLine();
 
             switch (opcion) {
                 case 1:
@@ -20,7 +20,6 @@ public class SistemaAlmacen {
                     break;
                 case 2:
                     if (Usuario.iniciarSesion(usuario, scanner)) {
-                        // Sesión iniciada correctamente
                     }
                     break;
                 case 3:
